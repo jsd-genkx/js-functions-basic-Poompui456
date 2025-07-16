@@ -23,3 +23,34 @@ console.log(trafficLightAction("green")); // "Go"
 console.log(trafficLightAction("yellow")); // "Slow down"
 console.log(trafficLightAction("red")); // "Stop"
 console.log(trafficLightAction("blue")); // "Invalid light color"
+// Version01 = recommended this solution.
+function trafficLightAction(color) {
+  switch (color) {
+    case "green":
+      return "Go";
+    case "yellow":
+      return "Slow down";
+    case "red":
+      return "Stop";
+    default:
+      return "Invalid light color";
+  }
+}
+// Version02 = solution 02
+function trafficLightAction(color) {
+  let message = "";
+  switch (color) {
+    case "green":
+      message = "Go";
+      break;
+    case "yellow":
+      message = "Slow down";
+      break;
+    case "red":
+      message = "Stop";
+      break;
+    default:
+      message = "Invalid light color";
+  }
+  return message;
+}
