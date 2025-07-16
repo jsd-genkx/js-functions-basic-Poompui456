@@ -22,7 +22,6 @@ console.log(checkEvenOrOdd(4)); // "Even"
 console.log(checkEvenOrOdd(9)); // "Odd"
 console.log(checkEvenOrOdd(0)); // "Even"
 console.log(checkEvenOrOdd(-3)); // "Odd"
-
 // version01 : Function Expression
 const checkEvenOrOdd = function(number) {
     if (number % 2 === 0) {
